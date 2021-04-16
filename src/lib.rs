@@ -1,5 +1,5 @@
 fn josephus_survivor(n: i32, k: i32) -> i32 {
-    // your code here
+    (1..=n).fold(0,|index, count| (index + k) % count ) + 1
 }
 
 #[cfg(test)]
